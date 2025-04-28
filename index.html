@@ -47,13 +47,25 @@
       background-color: rgba(0,0,0,0.6);
       padding: 10px 20px;
       border-radius: 10px;
+      text-align: center;
     }
-    .nestle-logo {
+    .nestle-logo-container {
       position: absolute;
       top: 20px;
       left: 20px;
+      background: white;
+      padding: 8px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .nestle-logo-container:hover {
+      transform: scale(1.05);
+    }
+    .nestle-logo {
       width: 100px;
       height: auto;
+      display: block;
     }
     .section {
       padding: 20px 40px;
@@ -141,12 +153,12 @@
   </nav>
 
   <header>
-    <img src="https://tse4.mm.bing.net/th/id/OIP.l2gpOHRWj-qxrE8k_CASZAHaE7?cb=iwp1&pid=ImgDet&w=199&h=132&c=7" alt="Nestle Logo" class="nestle-logo">
+    <div class="nestle-logo-container">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.l2gpOHRWj-qxrE8k_CASZAHaE7?cb=iwp1&pid=ImgDet&w=199&h=132&c=7" alt="Nestle Logo" class="nestle-logo">
+    </div>
     <h1>Nestle Voice and Contact Center Device Catalogue</h1>
   </header>
 
-  <!-- Rest of your sections (unchanged) -->
-  
   <!-- DECT Phones Section -->
   <div class="section" id="dect">
     <h2>DECT Phones</h2>
@@ -155,9 +167,8 @@
     </div>
   </div>
 
-  <!-- Similarly Desk Phones, Headsets, Speaker Phones sections go here -->
+  <!-- Similarly Desk Phones, Headsets, Speaker Phones sections -->
 
-  <!-- Download Section -->
   <div class="download-section">
     <button onclick="window.print()">Download as PDF</button>
   </div>
