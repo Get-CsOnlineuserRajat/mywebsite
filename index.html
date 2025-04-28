@@ -15,17 +15,25 @@
     nav {
       background-color: #0078d4;
       display: flex;
-      justify-content: center;
-      padding: 10px;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 30px;
       position: sticky;
       top: 0;
       z-index: 1000;
+      flex-wrap: wrap;
+    }
+    .nav-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
     }
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1em;
     }
     nav a:hover {
       text-decoration: underline;
@@ -49,23 +57,12 @@
       border-radius: 10px;
       text-align: center;
     }
-    .nestle-logo-container {
+    .nestle-logo {
       position: absolute;
       top: 20px;
       left: 20px;
-      background: white;
-      padding: 8px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-    .nestle-logo-container:hover {
-      transform: scale(1.05);
-    }
-    .nestle-logo {
-      width: 100px;
+      width: 140px; /* Increased size */
       height: auto;
-      display: block;
     }
     .section {
       padding: 20px 40px;
@@ -125,37 +122,27 @@
     .device-card button:hover {
       background-color: #005a9e;
     }
-    .download-section {
-      text-align: center;
-      margin: 50px 0;
-    }
-    .download-section button {
-      background-color: #28a745;
-      color: white;
-      font-size: 1.2em;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .download-section button:hover {
-      background-color: #218838;
-    }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="#dect">DECT Phones</a>
-    <a href="#desk">Desk Phones</a>
-    <a href="#headsets">Headsets</a>
-    <a href="#speakers">Speaker Phones</a>
+    <div class="nav-column">
+      <a href="#dect">DECT Phones</a>
+    </div>
+    <div class="nav-column">
+      <a href="#desk">Desk Phones</a>
+    </div>
+    <div class="nav-column">
+      <a href="#headsets">Headsets</a>
+    </div>
+    <div class="nav-column">
+      <a href="#speakers">Speaker Phones</a>
+    </div>
   </nav>
 
   <header>
-    <div class="nestle-logo-container">
-      <img src="https://tse4.mm.bing.net/th/id/OIP.l2gpOHRWj-qxrE8k_CASZAHaE7?cb=iwp1&pid=ImgDet&w=199&h=132&c=7" alt="Nestle Logo" class="nestle-logo">
-    </div>
+    <img src="https://tse4.mm.bing.net/th/id/OIP.l2gpOHRWj-qxrE8k_CASZAHaE7?cb=iwp1&pid=ImgDet&w=199&h=132&c=7" alt="Nestle Logo" class="nestle-logo">
     <h1>Nestle Voice and Contact Center Device Catalogue</h1>
   </header>
 
@@ -163,14 +150,32 @@
   <div class="section" id="dect">
     <h2>DECT Phones</h2>
     <div class="container">
-      <!-- Device cards here -->
+      <!-- Device cards go here -->
     </div>
   </div>
 
-  <!-- Similarly Desk Phones, Headsets, Speaker Phones sections -->
+  <!-- Desk Phones Section -->
+  <div class="section" id="desk">
+    <h2>Desk Phones</h2>
+    <div class="container">
+      <!-- Device cards go here -->
+    </div>
+  </div>
 
-  <div class="download-section">
-    <button onclick="window.print()">Download as PDF</button>
+  <!-- Headsets Section -->
+  <div class="section" id="headsets">
+    <h2>Headsets</h2>
+    <div class="container">
+      <!-- Device cards go here -->
+    </div>
+  </div>
+
+  <!-- Speaker Phones Section -->
+  <div class="section" id="speakers">
+    <h2>Speaker Phones</h2>
+    <div class="container">
+      <!-- Device cards go here -->
+    </div>
   </div>
 
 </body>
