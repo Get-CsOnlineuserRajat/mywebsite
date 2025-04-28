@@ -31,7 +31,8 @@
       text-decoration: underline;
     }
     header {
-      background: url('https://www.hp.com/content/dam/sites/worldwide/poly/gateway/Hero_banner_desktop@2x.jpg') no-repeat center center/contain;
+      position: relative;
+      background: url('https://www.hp.com/content/dam/sites/worldwide/poly/gateway/Hero_banner_desktop@2x.jpg') no-repeat center center/cover;
       height: 400px;
       background-color: #333;
       display: flex;
@@ -40,12 +41,21 @@
       color: white;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
       margin-bottom: 40px;
+      overflow: hidden;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 120px;
+      height: auto;
     }
     header h1 {
       font-size: 3em;
       background-color: rgba(0,0,0,0.6);
       padding: 10px 20px;
       border-radius: 10px;
+      text-align: center;
     }
     .section {
       padding: 20px 40px;
@@ -133,8 +143,12 @@
   </nav>
 
   <header>
+    <!-- Nestle Logo -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Nestlé_logo_blue.svg/2560px-Nestlé_logo_blue.svg.png" alt="Nestle Logo" class="logo">
     <h1>Nestle Voice and Contact Center Device Catalogue</h1>
   </header>
+
+  <!-- Sections remain same (DECT Phones, Desk Phones, Headsets, Speakers, Download Section) -->
 
   <!-- DECT Phones Section -->
   <div class="section" id="dect">
