@@ -49,7 +49,6 @@
     .nav-links {
       display: flex;
       gap: 20px;
-      flex-wrap: wrap;
     }
     .nav-links a {
       text-decoration: none;
@@ -61,7 +60,8 @@
       color: #005a9e;
     }
     .logo img {
-      height: 50px;
+      height: 70px; /* Medium size */
+      margin: 5px 0;
       object-fit: contain;
     }
     .section {
@@ -124,84 +124,102 @@
 <!-- Navbar -->
 <nav>
   <div class="logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Nestle_logo.svg" alt="Nestle Logo">
+    <img src="https://www.nestle.com/themes/custom/da_vinci_code/logo.svg" alt="Nestle Logo" style="height: 45px;">
   </div>
   <div class="nav-links">
+    <a href="#dect">DECT Phones</a>
+    <a href="#desk">Desk Phones</a>
     <a href="#headsets">Headsets</a>
-    <a href="#speakerphones">Speakerphones</a>
-    <a href="#webcameras">Web Cameras</a>
-    <a href="#deskphones">Desk Phones</a>
-    <a href="#dectsolutions">DECT Solutions</a>
-    <a href="#mobilehandsets">Mobile Handsets</a>
-    <a href="#evaluation">Devices Under Evaluation</a>
+    <a href="#speakers">Speaker Phones</a>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<header>
-  <h1>Nestlé Voice and Contact Center Device Catalogue</h1>
-</header>
 
-<!-- Headsets -->
-<section class="section" id="headsets">
-  <h2>Headsets</h2>
-  <div class="container">
-    <!-- Sample headset cards -->
-  </div>
-</section>
+  <!-- Hero Section -->
+  <header>
+    <h1>Nestlé Voice and Contact Center Device Catalogue</h1>
+  </header>
 
-<!-- Speakerphones -->
-<section class="section" id="speakerphones">
-  <h2>Speakerphones</h2>
-  <div class="container">
-    <!-- Sample speakerphone cards -->
-  </div>
-</section>
+  <!-- DECT Phones -->
+  <section class="section" id="dect">
+    <h2>DECT Phones</h2>
+    <div class="container">
+      <div class="device-card">
+        <img src="https://www.yealink.com/upfiles/products/202101/1610618721827.png" alt="Yealink W73P">
+        <h3>Yealink W73P</h3>
+        <p>High-performance DECT phone for hybrid offices, Teams certified.</p>
+        <p class="price">$189.00</p>
+      </div>
+      <div class="device-card">
+        <img src="https://www.poly.com/content/dam/www/products/phones/ccx/dect-series/dect-phones-hero.png" alt="Poly Rove 30">
+        <h3>Poly Rove 30</h3>
+        <p>Durable wireless DECT handset with Teams interoperability.</p>
+        <p class="price">$299.00</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Web Cameras -->
-<section class="section" id="webcameras">
-  <h2>Web Cameras</h2>
-  <div class="container">
-    <!-- Sample web camera cards -->
-  </div>
-</section>
+  <!-- Desk Phones -->
+  <section class="section" id="desk">
+    <h2>Desk Phones</h2>
+    <div class="container">
+      <div class="device-card">
+        <img src="https://www.poly.com/content/dam/www/products/phones/ccx/ccx400/images/ccx400-front-right.png" alt="Poly CCX 400">
+        <h3>Poly CCX 400</h3>
+        <p>Entry-level Teams certified desk phone with touch screen.</p>
+        <p class="price">$299.99</p>
+      </div>
+      <div class="device-card">
+        <img src="https://www.yealink.com/upfiles/products/202008/1597806394727.png" alt="Yealink MP56">
+        <h3>Yealink MP56</h3>
+        <p>Powerful desk phone with 7-inch touchscreen and Teams integration.</p>
+        <p class="price">$349.00</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Desk Phones -->
-<section class="section" id="deskphones">
-  <h2>Desk Phones</h2>
-  <div class="container">
-    <!-- Sample desk phone cards -->
-  </div>
-</section>
+  <!-- Headsets -->
+  <section class="section" id="headsets">
+    <h2>Headsets</h2>
+    <div class="container">
+      <div class="device-card">
+        <img src="https://www.poly.com/content/dam/www/products/headsets/voyager/voyager-focus-2/images/voyager-focus-2-hero.png" alt="Poly Voyager Focus 2">
+        <h3>Poly Voyager Focus 2</h3>
+        <p>Teams-certified wireless headset with ANC and premium comfort.</p>
+        <p class="price">$279.99</p>
+      </div>
+      <div class="device-card">
+        <img src="https://www.jabra.com/-/media/Images/Products/Jabra-Evolve2-65/Gold/Evolve2-65_ProductPage_Banner_Laptop_01.jpg" alt="Jabra Evolve2 65">
+        <h3>Jabra Evolve2 65</h3>
+        <p>High-quality Teams headset with long battery life and powerful audio.</p>
+        <p class="price">$249.99</p>
+      </div>
+    </div>
+  </section>
 
-<!-- DECT Solutions -->
-<section class="section" id="dectsolutions">
-  <h2>DECT Solutions</h2>
-  <div class="container">
-    <!-- Sample DECT solution cards -->
-  </div>
-</section>
+  <!-- Speaker Phones -->
+  <section class="section" id="speakers">
+    <h2>Speaker Phones</h2>
+    <div class="container">
+      <div class="device-card">
+        <img src="https://www.poly.com/content/dam/www/products/conferencing/ccx/ccx500/images/ccx500-side-right.png" alt="Poly Sync 20">
+        <h3>Poly Sync 20</h3>
+        <p>Portable Teams-certified speakerphone with crystal-clear audio.</p>
+        <p class="price">$169.00</p>
+      </div>
+      <div class="device-card">
+        <img src="https://www.jabra.com/-/media/Images/Products/Speak2-75/packshots/speak2-75-uc-usb-c-silver-hero.png" alt="Jabra Speak2 75">
+        <h3>Jabra Speak2 75</h3>
+        <p>Next-gen speakerphone for hybrid meetings, optimized for Teams.</p>
+        <p class="price">$349.00</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Mobile Handsets -->
-<section class="section" id="mobilehandsets">
-  <h2>Mobile Handsets</h2>
-  <div class="container">
-    <!-- Sample mobile handset cards -->
-  </div>
-</section>
-
-<!-- Devices Under Evaluation -->
-<section class="section" id="evaluation">
-  <h2>Devices Under Evaluation</h2>
-  <div class="container">
-    <!-- Sample evaluation device cards -->
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  &copy; 2025 Nestlé. All rights reserved.
-</footer>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Nestlé. All rights reserved.
+  </footer>
 
 </body>
 </html>
